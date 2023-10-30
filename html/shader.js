@@ -38,7 +38,7 @@ uniform float u_time;
 void main() {
     float time = u_time * .5+23.0;
     // uv should be the 0-1 uv of texture...
-    vec2 uv = v_texCoord.xy;
+    vec2 uv = v_texCoord.xy * 2.0;
 
     vec2 p = mod(uv*TAU, TAU)-250.0;
 
