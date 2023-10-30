@@ -39,6 +39,6 @@ I have a raspberry pi running this connected to a projector
 
 There is commented code and a sample video in the html folder with recorded caustics instead of the default fragment shader. This is purely an exercise for the reader if you want to make it work; Just uncomment the code and change the fragment shader source variable. It should work right away. 
 
-Be warned, some browser don't loop the video very smoothly.
+Be warned, some browsers don't loop the video very smoothly.
 
 
