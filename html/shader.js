@@ -27,7 +27,7 @@ void main() {
 
 const fragmentShaderSource = `
 #define TAU 6.28318530718
-#define MAX_ITER 8
+#define MAX_ITER 3
 
 precision mediump float;
 varying vec2 v_texCoord;
