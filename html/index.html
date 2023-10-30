@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video as WebGL Texture</title>
+    <style>
+        body { margin: 0; overflow: hidden; }
+        canvas { display: block; }
+        video { display: none;}
+    </style>
+</head>
+<body>
+<video id="video" style="display: hidden;" src="BlackCaustics.mp4" loop muted autoplay></video>
+<canvas id="canvas"></canvas>
+<script src="shader.js"></script>
+<script src="hass.js"></script>
+<script>
+    async function __() {
+        let color = await getColorOfLight();
+        console.log(color);
+
+        setupVideo(color)
+    }
+    
+    __();
+</script>
+</body>
+</html>
